@@ -1,0 +1,11 @@
+pandas
+numpy
+matplotlib
+seaborn
+scipy
+tensorflow
+notebook
+opencv-python
+Pillow
+Flask
+Flask-Cors
