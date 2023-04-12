@@ -21,7 +21,7 @@ OpenCV, Pillow, Flask, Flask-Cors, VScode, Docker
 ```
 - Upload any male or female image and click predict button, thats it.
 - Use test_images inside Images folder for Prediction or you can use the outside file.
-    - Note: The given test_images are not used in training process.
+#### Note: The given test_images are not used in training process.
 
 
 # Process of code:
