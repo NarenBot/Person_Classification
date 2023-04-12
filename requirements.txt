@@ -4,8 +4,10 @@ matplotlib
 seaborn
 scipy
 tensorflow
+# tensorflow-gpu
 notebook
 opencv-python
 Pillow
 Flask
 Flask-Cors
+gunicorn

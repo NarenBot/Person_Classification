@@ -5,7 +5,7 @@ from utils import decodeImage
 from predict import Person
 
 app = Flask(__name__)
-CORS(app)
+# CORS(app)
 
 
 # @cross_origin()
@@ -16,13 +16,13 @@ class ClientApp:
 
 
 @app.route("/", methods=["GET"])
-@cross_origin()
+# @cross_origin()
 def home():
     return render_template("index.html")
 
 
 @app.route("/predict", methods=["POST"])
-@cross_origin()
+# @cross_origin()
 def predict():
     image = request.json["image"]
     decodeImage(image, clApp.filename)
@@ -33,4 +33,4 @@ def predict():
 # port = int(os.getenv("PORT"))
 if __name__ == "__main__":
     clApp = ClientApp()
-    app.run(host="0.0.0.0", port=8080, debug=True)
+    app.run(debug=True)

@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
 import numpy as np
-from keras import utils
 from keras.models import load_model
-
-# from keras.preprocessing import image
+from keras.preprocessing import image
+from keras import utils
 
 
 class Person:
@@ -21,7 +19,7 @@ class Person:
         test_image = utils.img_to_array(test_image)
         test_image = np.expand_dims(test_image, axis=0)
         result = model.predict(test_image)
-        # print(result)
+        print(result)
         if result[0][0] == 0:
             prediction = "Female"
             return [{"Predicted as ": prediction}]

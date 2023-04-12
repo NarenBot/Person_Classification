@@ -1,5 +1,9 @@
-# Person_Classification
+# Person_Classification:
 This Repo is for whether the model classifies the person as Male or Female in computer vision technique.
+
+# Useful Links:
+- [GITHUB_LINK](https://github.com/NarenBot/Person_Classification.git)
+- [CloudRun_App](https://persons-app-33bn33omfa-el.a.run.app)
 
 # Models Used:
 Tensorflow
@@ -19,11 +23,12 @@ OpenCV, Pillow, Flask, Flask-Cors, VScode, Docker
 - Use test_images inside Images folder for Prediction or you can use the outside file.
     - Note: The given test_images are not used in training process.
 
+
 # Process of code:
 - Initialize ClientApp class with filename as 'inputImage.jpg'
 - When we uploaded the image, it will encode into base64 using javascript.
 - Once you click the predict button, the user request the encoded image and decode it.
 - After decoding the image, an 'inputImage.jpg' file was created.
-- Then it will passes through the prediction function in Person class.
+- Then it will passes through the prediction function in Person class and load the model.h5 file.
 - Here the image will converted to array, expand the dimensions and finally predicted in JSON format.
 
